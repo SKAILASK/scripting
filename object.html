@@ -1,0 +1,79 @@
+<html>
+   <head>
+       <title>Javascript Object</title>
+   </head> 
+   <body>
+       <script>
+           //1.
+           const Employee = {
+
+firstName: "john",
+
+lastName: "doe",
+
+EmailId: "johndoe622@hotmail.com",
+
+Title: "Analyst",
+
+Department:"Electronics",
+
+ContactNo:"786950439229",
+
+BriefDescription:"Currently living in San francisco",
+
+Password:"****"
+
+};
+//2.
+console.log(Employee.firstName +" "+Employee.EmailId);
+
+//3.
+function Details(){
+
+      console.log(Employee);
+   }
+
+   Details();
+//4.a
+
+console.log(Employee.BriefDescription.length);
+
+//4.b
+
+let x = "capgemini banglore";
+
+ let x1 = "    capgemini india   ";
+
+ console.log(x.slice(2,4));
+
+ console.log(x.slice(2));
+
+ console.log(x.slice(-4));
+
+ console.log(x.substring(0,4));
+
+ console.log(x.substring(3,7));
+
+ console.log(x.replace("banglore","pune"));
+
+ console.log(x.substring(0,4));
+
+console.log(x.toLowerCase(0,4));
+
+ console.log(x.toUpperCase(0,4));
+
+ let text2=x1.trim();
+
+ console.log(text2);
+
+  console.log('hello'.padStart(7,"x"));
+
+  console.log('Hello'.padEnd(8,"&"));
+
+  console.log(x.charAt(4));
+
+  console.log(x.charCodeAt(0));
+
+</script>
+   </body>
+</html>

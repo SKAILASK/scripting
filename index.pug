@@ -1,0 +1,20 @@
+extends layout 
+block content 
+  p Employee management system 
+  table(border='4')
+    tr 
+      th EmpTD 
+      th Empname 
+      th EmpDept 
+      th Empsalary 
+      th(colspan='2')Actions
+    each data i in empData 
+     tr 
+      td=data.empid
+      td=data.empname 
+      td=data.empdept 
+      td=data.empsalary 
+      td UPdate 
+      td Delete  
+  h1 #{title}
+  a(href='/add') Add Employee
